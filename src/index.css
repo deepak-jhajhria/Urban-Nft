@@ -9,4 +9,7 @@
     .text-darkGold-gradient{
         @apply bg-gradient-to-b from-[#ECA54A] from-15% to-[#E59937] bg-clip-text text-transparent
     }
+    .bg-gold-gradient{
+        @apply bg-gradient-to-b from-[#FFC881] from-15% to-[#DA8517]
+    }
 }
