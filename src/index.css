@@ -1,13 +1,12 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components{
+    .text-gold-gradient{
+        @apply bg-gradient-to-b from-[#FFC881] from-15% to-[#DA8517] bg-clip-text text-transparent
+    }
+    .text-darkGold-gradient{
+        @apply bg-gradient-to-b from-[#ECA54A] from-15% to-[#E59937] bg-clip-text text-transparent
+    }
 }
