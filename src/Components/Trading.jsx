@@ -1,61 +1,57 @@
 import React from 'react'
-import collection1 from "../assets/images/CollectionImg1.png";
-import collection1Logo from "../assets/images/CollectionImg1logo.png";
+import Trading1 from "../assets/images/TradingImg1.png";
+import Trading2 from "../assets/images/TradingImg2.png";
+import Trading3 from "../assets/images/TradingImg3.png";
+import Trading1Logo from "../assets/images/TradingImg1logo.png";
+import Trading2Logo from "../assets/images/TradingImg2logo.png";
+import Trading3Logo from "../assets/images/TradingImg3logo.png";
 const Trading = () => {
     const CardValue = [
         {
           id: "1",
           heading: "Jozo Gators",
-          image: collection1,
-          imageLogo: collection1Logo,
+          image: Trading1,
+          imageLogo: Trading1Logo,
           discription: "Collection",
           para: "1.1K",
         },
         {
           id: "1",
           heading: "Jozo Gators",
-          image: collection1,
-          imageLogo: collection1Logo,
+          image: Trading2,
+          imageLogo: Trading2Logo,
           discription: "Collection",
           para: "1.1K",
         },
         {
           id: "1",
           heading: "Jozo Gators",
-          image: collection1,
-          imageLogo: collection1Logo,
+          image: Trading3,
+          imageLogo: Trading3Logo,
           discription: "Collection",
           para: "1.1K",
         },
       ];
       const listingComponents = CardValue.map((listing) => (
-        <div key={listing.id}>
-          <div className="relative">
-            <img
-              className=" rounded-xl"
-              src={listing.image}
-              alt={listing.discription}
-            />
-            <div className="absolute top-[35%] left-16 items-center justify-center flex flex-col z-10">
-              <img src={listing.imageLogo} alt={listing.discription} />
-              <h2 className="text-center text-white text-base font-semibold font-Inter">
-                {listing.heading}
-              </h2>
-              <p className="text-white text-[11px] font-normal font-Inter">
-                {listing.para}
-              </p>
-            </div>
+        <div className="w-full" key={listing.id}>
+        <div style={{ backgroundImage: `url(${listing.image})`}} className="w-full min-h-[150px] bg-no-repeat bg-cover items-center justify-center flex rounded-xl relative z-0">
+        <div className=" flex items-center justify-center flex-col z-20">
+            <img className="rounded-md mt-4" src={listing.imageLogo} alt={listing.discription} />
+            <h2 className="text-center text-white text-base font-semibold font-Inter">{listing.heading}</h2>
+            <p className="text-white text-[11px] font-normal font-Inter"> {listing.para}</p>
+          <div className="w-full h-[69px] absolute bottom-0 left-0 -z-10  backdrop-blur-sm bg-[#6A6A6A] bg-opacity-70 overflow-hidden rounded-b-xl"></div>
           </div>
         </div>
+      </div>
       ));
   return (
     <div className="mt-10">
       <div className="flex items-center justify-between mb-4">
         <p className="text-neutral-600 text-base font-semibold font-Inter">
-          Top Collections
+        Trendings NFTs
         </p>
         <button className="flex items-center gap-3 font-Inter text-xs font-semibold text-[#4F4F4F]">
-          View All{" "}
+        Marketplace
           <span>
             <svg
               width="16"
@@ -82,7 +78,7 @@ const Trading = () => {
           </span>
         </button>
       </div>
-      <div className="flex gap-4">{listingComponents}</div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">{listingComponents}</div>
     </div>
   )
 }

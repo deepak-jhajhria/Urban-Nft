@@ -5,17 +5,14 @@ import MainSecond from "./MainSecond";
 
 const MainSection = () => {
   return (
-    <div className="w-full">
-      <Nav />
-      <div className="flex w-full">
-        <div className="w-[72%]">
+      <div className="flex flex-col xl:flex-row w-full">
+        <div className="xl:w-[70%]">
         <MainFirst />
         </div>
-        <div className="w-[28%]">
+        <div className="xl:w-[30%]">
         <MainSecond />
         </div>
       </div>
-    </div>
   );
 };
 
