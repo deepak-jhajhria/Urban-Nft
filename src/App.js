@@ -6,7 +6,8 @@ import SideBar from "./Components/SideBar";
 import Nav from "./Components/Nav";
 import MainSection from "./Components/MainSection";
 import Collection from "./Components/Collection";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 function App() {
   return (
     <div>

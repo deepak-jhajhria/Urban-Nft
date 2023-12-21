@@ -4,7 +4,7 @@ import HistoryCard from "./HistoryCard";
 
 const MainSecond = () => {
   return (
-    <div className=" w-full flex flex-col md:flex-row xl:flex-col gap-5">
+    <div className=" w-full flex flex-col md:flex-row xl:flex-col gap-5 xl:ml-10">
       <NewNft />
       <HistoryCard />
     </div>
