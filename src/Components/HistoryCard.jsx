@@ -14,55 +14,55 @@ const HistoryCard = () => {
     },
     {
       image: imageLogo,
-      'h2': "Cet #6882",
-      'p': "Cets on Creck",
+      'h2': "Bored Ape #981",
+      'p': "Bored Ape Solana Club",
       logo: Logo,
-      Number: "250"
+      Number: "38"
 
     },
     {
       image: imageLogo,
-      'h2': "Cet #6882",
-      'p': "Cets on Creck",
+      'h2': "SolPunk #7803",
+      'p': "SolPunks",
       logo: Logo,
-      Number: "250"
+      Number: "15"
 
     },
   ]
   const CardComponets = CardItems.map((listing) => (
-    <div className="flex items-center justify-between mt-3">
+    <div className="flex items-center justify-between mt-2 sm:mt-3">
       <div className="flex items-center">
-        <img src={listing.image} alt={listing.p} />
+        <img className="max-xs:w-10 max-xs:h-10" src={listing.image} alt={listing.p} />
         <div className="flex flex-col ml-3">
-          <h2 className="text-sm font-bold text-[#464649] font-Inter">{listing.h2}</h2>
-          <p className="text-xs font-normal text-[#464649] font-Inter">{listing.p}</p>
+          <h2 className="text-xs sm:text-sm font-medium sm:font-bold text-[#474749] font-Inter">{listing.h2}</h2>
+          <p className="text-[10px] sm:text-xs font-normal text-[#474749] font-Inter">{listing.p}</p>
         </div>
       </div>
       <div className="flex items-center text-end">
         <img src={listing.logo} alt={listing.p} />
-        <p className="text-xs font-normal text-[#464649] font-Inter">{listing.Number}</p>
+        <p className="text-xs font-normal text-[#474749] font-Inter">{listing.Number}</p>
       </div>
     </div>
   ))
   return (
-    <div className="bg-white rounded-2xl md:mt-16 flex w-full">
-      <div className="py-5 px-6 min-h-[447px] w-full flex flex-col justify-between">
+    <div className="bg-white rounded-xl sm:rounded-2xl md:mt-16 flex w-full">
+      <div className=" py-2 px-3 sm:py-5 sm:px-6 min-h-[300px] xs:min-h-[400px] lg:min-h-[447px] w-full flex flex-col justify-between">
         <div>
           <div className=" flex justify-between items-center mb-5">
-            <p className="text-neutral-600 text-base font-semibold font-Inter">
+            <p className="text-neutral-600 text-sm sm:text-base font-semibold font-Inter">
             History
             </p>
-            <select className='flex items-center border text-[#4F4F4F] outline-none border-[#A8A8A8] rounded-md px-2 py-1'>Last Month <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <select className='flex items-center border text-[#4F4F4F] outline-none border-[#A8A8A8] rounded-md px-1 py-[2px] sm:px-2 sm:py-1 text-[10px] sm:text-xs font-Inter font-normal'>Last Month <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12.6663 5.6665L7.99967 10.3332L3.33301 5.6665" stroke="#7C7C7C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
-              <option className='hover:bg-slate-100'>Last Month</option>
-              <option className='hover:bg-slate-100'>August</option>
-              <option className='hover:bg-slate-100'>September</option>
-              <option className='hover:bg-slate-100'>October</option>
+              <option className='text-[10px] sm:text-xs font-Inter font-normal'>Last Month</option>
+              <option className='text-[10px] sm:text-xs font-Inter font-normal'>August</option>
+              <option className='text-[10px] sm:text-xs font-Inter font-normal'>September</option>
+              <option className='text-[10px] sm:text-xs font-Inter font-normal'>October</option>
             </select>
           </div>
           {CardComponets}
-        </div>
+          </div>
         <CommonBtn text="Show All" />
       </div>
     </div>

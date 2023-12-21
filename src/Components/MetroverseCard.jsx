@@ -3,8 +3,8 @@ import CommonBtn from "./CommonBtn";
 import Swiper from "./Swiper";
 const MetroverseCard = () => {
   return (
-    <div className="bg-white rounded-[18px] shadow mt-9 relative">
-      <div className="p-7">
+    <div className="bg-white rounded-lg sm:rounded-[18px] shadow mt-9 relative">
+      <div className="px-3 sm:px-5 md:px-8 lg:px-12 py-2 sm:py-4 md:py-6">
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="flex flex-col justify-center">
             <div className="text-darkGold-gradient text-base font-medium font-Inter leading-tight">
@@ -17,7 +17,7 @@ const MetroverseCard = () => {
             <div className="max-w-[140px] mt-[30px]">
               <CommonBtn text="Explorer Now" />
               <div className="border border-[#FFC881] rounded-lg w-full max-w-[300px] mt-5 mr-5">
-                <div className="flex w-full">
+                <div className="flex flex-wrap w-full">
                   <div className="flex flex-col items-center justify-center border-r border-[#FFC881] pt-3 px-3 pb-2">
                     <p className="text-orange-300 text-xs font-bold">24.8K</p>
                     <p className="text-zinc-500 text-[10px] font-medium">

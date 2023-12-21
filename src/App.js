@@ -12,7 +12,7 @@ function App() {
     <div>
       <div className="flex">
         <SideBar />
-        <div className="w-full bg-[#EDF1F2] min-h-screen px-6">
+        <div className="w-full bg-[#EDF1F2] min-h-screen px-2 sm:px-4 md:px-6">
           <Nav />
           <div>
           <Routes>

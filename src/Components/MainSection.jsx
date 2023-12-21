@@ -5,8 +5,9 @@ import MainSecond from "./MainSecond";
 
 const MainSection = () => {
   return (
-      <div className="flex flex-col xl:flex-row w-full">
-        <div className="xl:w-[70%]">
+        // main section 
+      <div className="flex flex-col xl:flex-row w-full pr-2 sm:pr-4 md:pr-6 lg:pr-8">
+        <div className="xl:w-[70%] ">
         <MainFirst />
         </div>
         <div className="xl:w-[30%]">

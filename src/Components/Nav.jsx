@@ -10,8 +10,8 @@ const Nav = () => {
     <div className="pt-6">
       <nav>
         <div className="flex items-center justify-between">
-          <div className="bg-[#F9F9F9] border-[1px] border-[#E8E8EA] flex w-full items-center py-4 px-4 rounded-xl max-w-[200px] lg:max-w-[280px] justify-between">
-            <span className="">
+          <div className="bg-[#F9F9F9] border-[1px] border-[#E8E8EA] flex w-full items-center py-4 px-4 rounded-xl max-w-[150px] sm:max-w-[200px] lg:max-w-[280px] justify-between">
+            <span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="15"

@@ -5,7 +5,7 @@ import Trading from "./Trading";
 
 const MainFirst = () => {
   return (
-    <div className="pr-8 w-full">
+    <div className="w-full">
       <MetroverseCard />
       <Collection />
       <Trading />

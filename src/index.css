@@ -2,14 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-    .text-gold-gradient{
+@layer components {
+    .text-gold-gradient {
         @apply bg-gradient-to-b from-[#FFC881] from-15% to-[#DA8517] bg-clip-text text-transparent
     }
-    .text-darkGold-gradient{
+
+    .text-darkGold-gradient {
         @apply bg-gradient-to-b from-[#ECA54A] from-15% to-[#E59937] bg-clip-text text-transparent
     }
-    .bg-gold-gradient{
+
+    .bg-gold-gradient {
         @apply bg-gradient-to-b from-[#FFC881] from-15% to-[#DA8517]
     }
+
+    .LinkBtn {
+        @apply focus:bg-gradient-to-r focus:from-[#FBE8D5] focus:to-[#FEF9F8]
+    }
+
 }
