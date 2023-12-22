@@ -65,7 +65,9 @@ const HistoryCard = () => {
           </div>
           {CardComponets}
           </div>
-        <CommonBtn text="Show All" />
+        <div className="flex justify-center ">
+          <CommonBtn text="Show All" />
+        </div>
       </div>
     </div>
   );

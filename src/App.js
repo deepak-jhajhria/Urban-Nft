@@ -8,6 +8,8 @@ import MainSection from "./Components/MainSection";
 import Collection from "./Components/Collection";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Trading from "./Components/Trading";
+import HistoryCard from "./Components/HistoryCard";
 function App() {
   return (
     <div>
@@ -18,10 +20,10 @@ function App() {
           <div className="mt-3 sm:mt-5 md:mt-7 lg:mt-9">
           <Routes>
             <Route path="/" element={<MainSection />} />
-            <Route path="/market" element={<MetroverseCard />} />
-            <Route path="Favorites" element={<Collection />} />
-            <Route path="insight" element={<NewNft />} />
-            <Route path="wallet" element={<NewNft />} />
+            <Route path="/market" element={<div><Collection /> <Trading /></div>} />
+            <Route path="Favorites" element={<NewNft />} />
+            <Route path="insight" element={<HistoryCard />} />
+            <Route path="wallet" element={<MetroverseCard />} />
           </Routes>
           </div>
 

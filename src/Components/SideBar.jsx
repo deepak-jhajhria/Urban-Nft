@@ -5,8 +5,8 @@ const SideBar = () => {
   let commonLinkTwo = "flex gap-4 group LinkBtn items-center text-transparent font-medium text-sm focus:font-semibold font-Inter max-sm:justify-center py-2 px-2 sm:py-[14px] sm:px-[15px] rounded-full mt-4  sm:w-full"
   let commonLinkLogout = "flex gap-4 group LinkBtn items-center text-transparent font-medium text-sm focus:font-semibold font-Inter max-sm:justify-center py-2 px-2 sm:py-[14px] sm:px-[15px] rounded-full sm:w-full"
   return (
-    <div className="container p-0 min-w-[50px] max-w-[50px] xs:max-w-[100px] sm:max-w-[200px]  lg:max-w-[305px] bg-[#FFFDFF] h-full">
-      <div className="fixed bg-[url(./assets/images/sideBarbg.png)] w-full max-w-[50px] xs:max-w-[100px] sm:max-w-[200px]  lg:max-w-[305px] bg-no-repeat bg-top py-4 px-2 lg:py-8 lg:px-6 flex flex-col justify-between h-full overflow-y-scroll">
+    <div className="container p-0 min-w-[50px] max-w-[50px] xs:max-w-[100px] sm:max-w-[200px]  lg:max-w-[305px] bg-[#FFFDFF] min-h-screen">
+      <div className="fixed bg-[url(./assets/images/sideBarbg.png)] w-full max-w-[50px] xs:max-w-[100px] sm:max-w-[200px]  lg:max-w-[305px] bg-no-repeat bg-top py-4 px-2 lg:py-8 lg:px-6 flex flex-col justify-between  min-h-screen">
         <div>
           <div className="flex flex-col items-center">
             <img className='max-xs:w-5 max-xs:h-7 max-lg:mt-4' src={logo} alt="logo" />
@@ -98,7 +98,7 @@ const SideBar = () => {
               <span className="text-[#7C7C7C] group-focus:text-gold-gradient max-sm:hidden">Insight</span>
             </Link>
              {/* wallet  */}
-            <Link className={commonLink}>
+            <Link to="/wallet" className={commonLink}>
               <span>
                 <svg className='fill-[#A8A8A8] duration-300 group-focus:fill-[url(#paint0_linear_33_467)]' xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M15.4973 4.28134H12.3213C10.8433 4.28394 9.646 5.45136 9.64333 6.89242C9.64133 8.33674 10.84 9.50935 12.3213 9.5113H15.5V9.74076C15.5 12.2602 13.9727 13.75 11.388 13.75H4.61267C2.02733 13.75 0.5 12.2602 0.5 9.74076V4.25339C0.5 1.73397 2.02733 0.25 4.61267 0.25H11.3853C13.97 0.25 15.4973 1.73397 15.4973 4.25339V4.28134ZM4.05467 4.2755H8.28467H8.28733H8.29267C8.60933 4.27419 8.86533 4.02264 8.864 3.71324C8.86267 3.40448 8.604 3.15488 8.28733 3.15618H4.05467C3.74 3.15748 3.48467 3.40644 3.48333 3.71389C3.482 4.02264 3.738 4.27419 4.05467 4.2755Z" />
@@ -150,7 +150,7 @@ const SideBar = () => {
             </Link>
           </div>
         </div>
-        <div className='mb-2 sm:px-2'>
+        <div className='mb-2 sm:px-2 mt-16'>
           {/* logOut  */}
           <Link className={commonLinkLogout}>
             <span>
