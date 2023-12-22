@@ -24,7 +24,8 @@ module.exports = {
     },
     extend: { 
       fontFamily:{
-        'Inter':['Inter']
+        'Inter':['Inter', 'sans-serif'],
+        'libri':['Libre Franklin', 'sans-serif']
       }
     },
   },

@@ -7,7 +7,7 @@ const Nav = () => {
     document.body.classList.toggle("max-lg:overflow-hidden")
   }
   return (
-    <div className="pt-6">
+    <div className="pt-3 sm:pt-[23px]">
       <nav>
         <div className="flex items-center justify-between">
           <div className="bg-[#F9F9F9] border-[1px] border-[#E8E8EA] flex w-full items-center py-4 px-4 rounded-xl max-w-[150px] sm:max-w-[200px] lg:max-w-[280px] justify-between">
@@ -26,7 +26,7 @@ const Nav = () => {
               </svg>
             </span>
             <input
-              className="font-Inter font-normal ml-1 text-sm text-[#A5A3A9] outline-none bg-transparent w-full"
+              className=" font-libri font-normal ml-1 sm:ml-3 sm:mr-3 text-sm text-[#A5A3A9] outline-none bg-transparent w-full"
               type="text"
               placeholder="Search..."
             />
@@ -107,8 +107,8 @@ const Nav = () => {
             <div className="flex items-center gap-3">
               <img onClick={Profile} src={profile} alt="profilePhoto" />
               <div className={` ${show ? "hidden" : "block"} lg:block max-lg:shadow-xl max-lg:bg-[#FFFDFF] max-lg:max-w-[200px] max-lg:rounded-xl max-lg:fixed max-lg:top-[13%] max-lg:w-full max-lg:p-5 max-lg:right-2`}>
-                <p className="text-[#464649] text-sm font-bold font-['Libre Franklin']">Cody Fisher</p>
-                <p className="text-zinc-500 text-xs font-semibold font-['Libre Franklin'] tracking-tight max-lg:mt-2">kenzi.lawson@example.com</p>
+                <p className="text-[#474749] text-sm font-bold font-libri">Cody Fisher</p>
+                <p className="text-[#77757F] text-xs font-semibold font-libri tracking-tight max-lg:mt-2">kenzi.lawson@example.com</p>
                 <div className="flex items-center justify-center mt-2 gap-6 md:hidden">
                   <span>
                     <svg

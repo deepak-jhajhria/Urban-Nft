@@ -13,9 +13,9 @@ function App() {
     <div>
       <div className="flex">
         <SideBar />
-        <div className="w-full bg-[#EDF1F2] min-h-screen px-2 sm:px-4 md:px-6">
+        <div className="w-full bg-[#EDF1F2] min-h-screen pl-2 sm:pl-4 md:pl-6 pr-3 sm:pr-6 md:pr-[46px]">
           <Nav />
-          <div>
+          <div className="mt-3 sm:mt-5 md:mt-7 lg:mt-9">
           <Routes>
             <Route path="/" element={<MainSection />} />
             <Route path="/market" element={<MetroverseCard />} />

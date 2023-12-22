@@ -12,7 +12,7 @@
     }
 
     .bg-gold-gradient {
-        @apply bg-gradient-to-b from-[#FFC881] from-15% to-[#DA8517]
+        @apply bg-gradient-to-b from-[#FFC881] from-15% to-[#DA8517] duration-300 hover:bg-gradient-to-tr hover:from-[#Da8517] hover:to-[#ffc881] active:scale-[0.9]
     }
 
     .LinkBtn {

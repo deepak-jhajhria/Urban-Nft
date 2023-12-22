@@ -1,19 +1,21 @@
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/Unionpagelogo.png'
 const SideBar = () => {
-  let commonLink = "flex gap-4 group LinkBtn items-center text-transparent font-medium text-sm group-focus:font-semibold font-Inter max-sm:justify-center py-2 px-2 sm:py-[14px] sm:px-[15px] rounded-full mt-3  sm:w-full"
+  let commonLink = "flex gap-4 group LinkBtn items-center text-transparent font-medium text-sm focus:font-semibold font-Inter max-sm:justify-center py-2 px-2 sm:py-[14px] sm:px-[15px] rounded-full mt-3  sm:w-full"
+  let commonLinkTwo = "flex gap-4 group LinkBtn items-center text-transparent font-medium text-sm focus:font-semibold font-Inter max-sm:justify-center py-2 px-2 sm:py-[14px] sm:px-[15px] rounded-full mt-4  sm:w-full"
+  let commonLinkLogout = "flex gap-4 group LinkBtn items-center text-transparent font-medium text-sm focus:font-semibold font-Inter max-sm:justify-center py-2 px-2 sm:py-[14px] sm:px-[15px] rounded-full sm:w-full"
   return (
-    <div className="container p-0 min-w-[50px] max-w-[50px] xs:max-w-[100px] sm:max-w-[200px]  lg:max-w-[300px] bg-[#FFFDFF] min-h-screen">
-      <div className="fixed bg-[url(./assets/images/sideBarbg.png)] w-full max-w-[50px] xs:max-w-[100px] sm:max-w-[200px]  lg:max-w-[300px] bg-no-repeat bg-top py-4 px-2 sm:py-8 sm:px-6 flex flex-col justify-between h-full">
+    <div className="container p-0 min-w-[50px] max-w-[50px] xs:max-w-[100px] sm:max-w-[200px]  lg:max-w-[305px] bg-[#FFFDFF] h-full">
+      <div className="fixed bg-[url(./assets/images/sideBarbg.png)] w-full max-w-[50px] xs:max-w-[100px] sm:max-w-[200px]  lg:max-w-[305px] bg-no-repeat bg-top py-4 px-2 lg:py-8 lg:px-6 flex flex-col justify-between h-full overflow-y-scroll">
         <div>
           <div className="flex flex-col items-center">
-            <img className='max-xs:w-5 max-xs:h-7 mt-4' src={logo} alt="logo" />
+            <img className='max-xs:w-5 max-xs:h-7 max-lg:mt-4' src={logo} alt="logo" />
             <p className="font-Inter text-base font-bold text-gold-gradient mt-5 max-sm:hidden">URBAN NFT</p>
           </div>
-          <div className="mt-10 sm:mt-16">
-            <p className="text-Black text-xs font-medium font-Inter sm:pl-4 max-sm:hidden mb-1">MARKETPLACE</p>
+          <div className="mt-10 sm:mt-[68px] sm:px-2">
+            <p className="text-Black text-xs font-medium font-Inter sm:pl-[15px] max-sm:hidden mb-1">MARKETPLACE</p>
             {/* Dashboard */}
-            <Link to="/" className={commonLink}>
+            <Link to="/" className={commonLinkTwo}>
               <span>
                 <svg className='fill-[#A8A8A8] duration-300 group-focus:fill-[url(#paint0_linear_33_463)]' width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path opacity="0.4" d="M11.0562 0.5H13.5957C14.6474 0.5 15.4996 1.35939 15.4996 2.41997V4.98089C15.4996 6.04148 14.6474 6.90087 13.5957 6.90087H11.0562C10.0045 6.90087 9.15234 6.04148 9.15234 4.98089V2.41997C9.15234 1.35939 10.0045 0.5 11.0562 0.5Z" />
@@ -73,10 +75,10 @@ const SideBar = () => {
               <span className=" text-[#7C7C7C] group-focus:text-gold-gradient max-sm:hidden">Favorites</span>
             </Link>
           </div>
-          <div className="mt-10 sm:mt-16">
-            <p className="ttext-Black text-xs font-medium font-Inter sm:pl-4 max-sm:hidden pl-4 mb-1">MY PROFILE</p>
+          <div className="mt-10 md:mt-16 lg:mt-[90px] xl:mt-[130px] sm:px-2">
+            <p className="ttext-Black text-xs font-medium font-Inter sm:pl-[15px] max-sm:hidden pl-4 mb-1">MY PROFILE</p>
              {/* insight  */}
-            <Link to="/insight" className={commonLink}>
+            <Link to="/insight" className={commonLinkTwo}>
               <span>
                 <svg className='fill-[#A8A8A8] duration-300 group-focus:fill-[url(#paint0_linear_33_466)]' xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4321 2.55317C10.4321 4.21892 11.7844 5.56927 13.4526 5.56927C13.6363 5.56836 13.8195 5.55073 14 5.51659V11.4961C14 14.0117 12.5161 15.5 9.99682 15.5H4.50977C1.98388 15.5 0.5 14.0117 0.5 11.4961V6.01707C0.5 3.50146 1.98388 2 4.50977 2H10.4849C10.4494 2.18225 10.4317 2.36751 10.4321 2.55317ZM8.86248 10.1724L11.0059 7.40659V7.39341C11.1894 7.14685 11.1425 6.79917 10.9003 6.60976C10.7831 6.51926 10.6342 6.48009 10.4875 6.50119C10.3408 6.52229 10.209 6.60185 10.1221 6.72171L8.3151 9.04634L6.25745 7.42634C6.13997 7.33482 5.99053 7.29441 5.84286 7.31424C5.69519 7.33406 5.56174 7.41245 5.47264 7.53171L3.25672 10.3898C3.17883 10.4868 3.13689 10.6078 3.13801 10.7322C3.12515 10.9836 3.2839 11.212 3.52428 11.2879C3.76466 11.3637 4.02603 11.268 4.16023 11.0549L6.01343 8.6578L8.07108 10.2712C8.18811 10.3656 8.33854 10.4083 8.4878 10.3897C8.63705 10.3711 8.77231 10.2927 8.86248 10.1724Z" />
@@ -148,9 +150,9 @@ const SideBar = () => {
             </Link>
           </div>
         </div>
-        <div className='mb-3'>
+        <div className='mb-2 sm:px-2'>
           {/* logOut  */}
-          <Link className={commonLink}>
+          <Link className={commonLinkLogout}>
             <span>
               <svg className='fill-[#A8A8A8] duration-300 group-focus:fill-[url(#paint0_linear_33_471)]' xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path opacity="0.4" d="M0.5 3.83525C0.5 1.997 2.02268 0.5 3.8934 0.5H7.61423C9.48114 0.5 11 1.9925 11 3.82775V12.1648C11 14.0037 9.47732 15.5 7.60584 15.5H3.88653C2.01886 15.5 0.5 14.0075 0.5 12.1722V11.4672V3.83525Z" />

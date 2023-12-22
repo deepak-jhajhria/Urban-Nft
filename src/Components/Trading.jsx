@@ -34,23 +34,23 @@ const Trading = () => {
       ];
       const listingComponents = CardValue.map((listing) => (
         <div className="w-full" key={listing.id}>
-        <div style={{ backgroundImage: `url(${listing.image})`}} className="w-full min-h-[150px] bg-no-repeat bg-cover items-center justify-center flex rounded-xl relative z-0">
+        <div style={{ backgroundImage: `url(${listing.image})`}} className="w-full min-h-[165px] bg-no-repeat bg-cover items-center justify-center flex rounded-[18px] relative z-0">
         <div className=" flex items-center justify-center flex-col z-20">
-            <img className="rounded-md mt-4" src={listing.imageLogo} alt={listing.discription} />
-            <h2 className="text-center text-white text-base font-semibold font-Inter">{listing.heading}</h2>
+            <img className="rounded-md mt-12" src={listing.imageLogo} alt={listing.discription} />
+            <h2 className="text-center text-white text-base font-semibold font-Inter leading-none my-[7px]">{listing.heading}</h2>
             <p className="text-white text-[11px] font-normal font-Inter"> {listing.para}</p>
-          <div className="w-full h-[69px] absolute bottom-0 left-0 -z-10  backdrop-blur-sm bg-[#6A6A6A] bg-opacity-70 overflow-hidden rounded-b-xl"></div>
+          <div className="w-full h-[69px] absolute bottom-0 left-0 -z-10  backdrop-blur-sm bg-[#6A6A6A] bg-opacity-70 overflow-hidden rounded-b-[18px]"></div>
           </div>
         </div>
       </div>
       ));
   return (
-    <div className="mt-10">
+    <div className="mt-6 sm:mt-8 md:mt-10 lg:mt-[45px] ">
       <div className="flex items-center justify-between mb-4">
-        <p className="text-neutral-600 text-base font-semibold font-Inter">
+      <p className="text-[#4F4F4F] text-base font-semibold font-Inter">
         Trendings NFTs
         </p>
-        <button className="flex items-center gap-3 font-Inter text-xs font-semibold text-[#4F4F4F]">
+        <button className="flex items-center gap-3 font-Inter text-xs font-semibold text-[#4F4F4F] mr-2">
         Marketplace
           <span>
             <svg
