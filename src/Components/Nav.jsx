@@ -26,7 +26,8 @@ const Nav = () => {
               </svg>
             </span>
             <input
-              className=" font-libri font-normal ml-1 sm:ml-3 sm:mr-3 text-sm text-[#A5A3A9] outline-none bg-transparent w-full"
+              className=" font-libri font-normal ml-1 sm:ml-3 sm:mr-3 text-sm text-[#A5A3A9] outline-none bg-transparent w-full" 
+              maxLength={15}
               type="text"
               placeholder="Search..."
             />

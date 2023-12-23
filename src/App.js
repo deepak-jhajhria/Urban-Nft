@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import MetroverseCard from "./Components/MetroverseCard";
-import NewNft from "./Components/NewNft";
 import SideBar from "./Components/SideBar";
 import Nav from "./Components/Nav";
 import MainSection from "./Components/MainSection";
@@ -20,7 +19,7 @@ function App() {
           <Nav />
           <div className="mt-3 sm:mt-5 md:mt-7 lg:mt-9">
           <Routes>
-            <Route path="/" element={<MainSection />} />
+             <Route path="/" element={<MainSection />} />
             <Route path="/market" element={<div><Collection /> <Trading /></div>} />
             <Route path="Favorites" element={<Page />} />
             <Route path="insight" element={<HistoryCard />} />

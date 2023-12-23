@@ -1,6 +1,7 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/images/Unionpagelogo.png'
 const SideBar = () => {
+  const location = useLocation();
   let commonLink = "flex gap-4 group LinkBtn items-center text-transparent font-medium text-sm focus:font-semibold font-Inter max-sm:justify-center py-2 px-2 sm:py-[14px] sm:px-[15px] rounded-full mt-3  sm:w-full"
   let commonLinkTwo = "flex gap-4 group LinkBtn items-center text-transparent font-medium text-sm focus:font-semibold font-Inter max-sm:justify-center py-2 px-2 sm:py-[14px] sm:px-[15px] rounded-full mt-4  sm:w-full"
   let commonLinkLogout = "flex gap-4 group LinkBtn items-center text-transparent font-medium text-sm focus:font-semibold font-Inter max-sm:justify-center py-2 px-2 sm:py-[14px] sm:px-[15px] rounded-full sm:w-full"
@@ -16,9 +17,9 @@ const SideBar = () => {
             <div className="mt-10 sm:mt-[68px] sm:px-2">
               <p className="text-Black text-xs font-medium font-Inter sm:pl-[15px] max-sm:hidden mb-1">MARKETPLACE</p>
               {/* Dashboard */}
-              <Link to="/" className={commonLinkTwo}>
+              <Link to="/" className={`${location.pathname==="/" && "bg-gradient-to-r from-[#FBE8D5] to-[#FEF9F8] text-transparent font-semibold"} flex gap-4 items-center duration-300 font-medium text-sm font-Inter max-sm:justify-center py-2 px-2 sm:py-[14px] sm:px-[15px] rounded-full mt-4  sm:w-full`}>
                 <span>
-                  <svg className='fill-[#A8A8A8] duration-300 group-focus:fill-[url(#paint0_linear_33_463)]' width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg className={`${location.pathname==="/" && "fill-[url(#paint0_linear_33_463)]"} fill-[#A8A8A8] duration-300`} width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.4" d="M11.0562 0.5H13.5957C14.6474 0.5 15.4996 1.35939 15.4996 2.41997V4.98089C15.4996 6.04148 14.6474 6.90087 13.5957 6.90087H11.0562C10.0045 6.90087 9.15234 6.04148 9.15234 4.98089V2.41997C9.15234 1.35939 10.0045 0.5 11.0562 0.5Z" />
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40389 0.5H4.94337C5.99507 0.5 6.84726 1.35939 6.84726 2.41997V4.98089C6.84726 6.04148 5.99507 6.90087 4.94337 6.90087H2.40389C1.35219 6.90087 0.5 6.04148 0.5 4.98089V2.41997C0.5 1.35939 1.35219 0.5 2.40389 0.5ZM2.40389 9.09913H4.94337C5.99507 9.09913 6.84726 9.95852 6.84726 11.0191V13.58C6.84726 14.6399 5.99507 15.5 4.94337 15.5H2.40389C1.35219 15.5 0.5 14.6399 0.5 13.58V11.0191C0.5 9.95852 1.35219 9.09913 2.40389 9.09913ZM13.5961 9.09913H11.0566C10.0049 9.09913 9.15274 9.95852 9.15274 11.0191V13.58C9.15274 14.6399 10.0049 15.5 11.0566 15.5H13.5961C14.6478 15.5 15.5 14.6399 15.5 13.58V11.0191C15.5 9.95852 14.6478 9.09913 13.5961 9.09913Z" />
                     <defs>
@@ -33,7 +34,7 @@ const SideBar = () => {
                     </defs>
                   </svg>
                 </span>
-                <span className="text-[#7C7C7C] group-focus:text-gold-gradient max-sm:hidden">Dashboard</span>
+                <span className={`${location.pathname==="/" && "font-semibold bg-gradient-to-b from-[#FFC881] from-15% to-[#DA8517] bg-clip-text text-transparent"} text-[#7C7C7C] max-sm:hidden`}>Dashboard</span>
               </Link>
               {/* market  */}
               <Link to="/market" className={commonLink}>
