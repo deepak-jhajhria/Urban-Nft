@@ -59,7 +59,7 @@ const MetroverseCard = () => {
                 is available for claim via website
               </div>
               <div className="max-w-[140px] mt-3 sm:mt-4 lg:mt-6 xl:mt-[30px]">
-                <CommonBtn text="Explorer Now" />
+                <CommonBtn padding="py-2" text="Explorer Now" />
               </div>
             </div>
             <div className="border border-[#FFC881] rounded-lg w-full max-w-[300px] mt-5">

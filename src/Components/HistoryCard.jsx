@@ -52,7 +52,7 @@ const HistoryCard = () => {
         <div>
           <div className=" flex justify-between items-center mb-6">
             <p className="text-[#4F4F4F] text-sm sm:text-base font-medium font-Inter">
-            History
+              History
             </p>
             <select className='flex items-center border text-[#4F4F4F] outline-none border-[#A8A8A8] rounded-md px-1 py-[2px] sm:px-2 sm:py-1 text-[10px] sm:text-xs font-Inter font-normal'>Last Month <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12.6663 5.6665L7.99967 10.3332L3.33301 5.6665" stroke="#7C7C7C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -64,9 +64,9 @@ const HistoryCard = () => {
             </select>
           </div>
           {CardComponets}
-          </div>
+        </div>
         <div className="flex justify-center ">
-          <CommonBtn text="Show All" />
+          <CommonBtn padding="py-3" text="Show All" />
         </div>
       </div>
     </div>
