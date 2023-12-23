@@ -6,7 +6,7 @@ import MainSecond from "./MainSecond";
 const MainSection = () => {
   return (
         // main section 
-      <div className="flex flex-col gap-5 sm:gap-7 lg:gap-[38px] xl:flex-row w-full">
+      <div className="flex flex-col gap-5 sm:gap-7 lg:gap-[38px] xl:flex-row w-full mb-5">
         <div className="xl:w-[69%] ">
         <MainFirst />
         </div>

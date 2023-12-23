@@ -6,12 +6,12 @@ const SideBar = () => {
   let commonLinkLogout = "flex gap-4 group LinkBtn items-center text-transparent font-medium text-sm focus:font-semibold font-Inter max-sm:justify-center py-2 px-2 sm:py-[14px] sm:px-[15px] rounded-full sm:w-full"
   return (
     <div className="container p-0 min-w-[50px] max-w-[50px] xs:max-w-[100px] sm:max-w-[200px]  lg:max-w-[305px] bg-[#FFFDFF] h-full">
-      <div className="fixed bg-[url(./assets/images/sideBarbg.png)] w-full max-w-[50px] xs:max-w-[100px] sm:max-w-[200px]  lg:max-w-[305px] bg-no-repeat bg-top py-4 px-2 lg:py-8 lg:px-6 flex flex-col justify-between h-full overflow-y-scroll scrollbar-hide">
-        <div>
-          <div className="flex flex-col items-center">
-            <img className='max-xs:w-5 max-xs:h-7 max-lg:mt-4' src={logo} alt="logo" />
-            <p className="font-Inter text-base font-bold text-gold-gradient mt-5 max-sm:hidden">URBAN NFT</p>
-          </div>
+      <div className="fixed top-0 bottom-0 bg-[url(./assets/images/sideBarbg.png)] w-full max-w-[50px] xs:max-w-[100px] sm:max-w-[200px]  lg:max-w-[305px] bg-no-repeat bg-top py-4 px-2 lg:py-8 lg:px-6 flex flex-col justify-between min-h-screen">
+        <div className="flex flex-col items-center">
+          <img className='max-xs:w-5 max-xs:h-7 max-lg:mt-4' src={logo} alt="logo" />
+          <p className="font-Inter text-base font-bold text-gold-gradient mt-5 max-sm:hidden">URBAN NFT</p>
+        </div>
+        <div className="overflow-y-scroll scrollbar-hide h-full">
           <div className="mt-10 sm:mt-[68px] sm:px-2">
             <p className="text-Black text-xs font-medium font-Inter sm:pl-[15px] max-sm:hidden mb-1">MARKETPLACE</p>
             {/* Dashboard */}
@@ -34,7 +34,7 @@ const SideBar = () => {
               </span>
               <span className="text-[#7C7C7C] group-focus:text-gold-gradient max-sm:hidden">Dashboard</span>
             </Link>
-             {/* market  */}
+            {/* market  */}
             <Link to="/market" className={commonLink}>
               <span>
                 <svg className='fill-[#A8A8A8] duration-300 group-focus:fill-[url(#paint0_linear_33_464)]' width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -54,7 +54,7 @@ const SideBar = () => {
               </span>
               <span className=" text-[#7C7C7C] group-focus:text-gold-gradient max-sm:hidden">Market</span>
             </Link>
-              {/* Favorites */}
+            {/* Favorites */}
             <Link to="/Favorites" className={commonLink}>
               <span>
                 <svg className='fill-[#A8A8A8] duration-300 group-focus:fill-[url(#paint0_linear_33_465)]' xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -77,7 +77,7 @@ const SideBar = () => {
           </div>
           <div className="mt-10 md:mt-16 lg:mt-[90px] xl:mt-[130px] sm:px-2">
             <p className="ttext-Black text-xs font-medium font-Inter sm:pl-[15px] max-sm:hidden pl-4 mb-1">MY PROFILE</p>
-             {/* insight  */}
+            {/* insight  */}
             <Link to="/insight" className={commonLinkTwo}>
               <span>
                 <svg className='fill-[#A8A8A8] duration-300 group-focus:fill-[url(#paint0_linear_33_466)]' xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -97,7 +97,7 @@ const SideBar = () => {
               </span>
               <span className="text-[#7C7C7C] group-focus:text-gold-gradient max-sm:hidden">Insight</span>
             </Link>
-             {/* wallet  */}
+            {/* wallet  */}
             <Link to="/wallet" className={commonLink}>
               <span>
                 <svg className='fill-[#A8A8A8] duration-300 group-focus:fill-[url(#paint0_linear_33_467)]' xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
@@ -118,7 +118,7 @@ const SideBar = () => {
               </span>
               <span className=" text-[#7C7C7C] group-focus:text-gold-gradient max-sm:hidden">Wallet</span>
             </Link>
-             {/* profile  */}
+            {/* profile  */}
             <Link className={commonLink}>
               <span>
                 <svg className='fill-[#A8A8A8] duration-300 group-focus:fill-[url(#paint0_linear_33_464)]' xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" fill="none">
@@ -149,28 +149,28 @@ const SideBar = () => {
               <span className="text-[#7C7C7C] group-focus:text-gold-gradient max-sm:hidden">Setting</span>
             </Link>
           </div>
-        </div>
-        <div className='mb-2 sm:px-2 mt-16'>
-          {/* logOut  */}
-          <Link className={commonLinkLogout}>
-            <span>
-              <svg className='fill-[#A8A8A8] duration-300 group-focus:fill-[url(#paint0_linear_33_471)]' xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path opacity="0.4" d="M0.5 3.83525C0.5 1.997 2.02268 0.5 3.8934 0.5H7.61423C9.48114 0.5 11 1.9925 11 3.82775V12.1648C11 14.0037 9.47732 15.5 7.60584 15.5H3.88653C2.01886 15.5 0.5 14.0075 0.5 12.1722V11.4672V3.83525Z" />
-                <path d="M15.3339 7.59104L13.1996 5.40929C12.979 5.18429 12.624 5.18429 12.4041 5.41079C12.185 5.63729 12.1857 6.00254 12.4056 6.22754L13.575 7.42229H12.4538H6.16107C5.85063 7.42229 5.59863 7.68104 5.59863 7.99979C5.59863 8.31929 5.85063 8.57729 6.16107 8.57729H13.575L12.4056 9.77204C12.1857 9.99704 12.185 10.3623 12.4041 10.5888C12.5144 10.702 12.6583 10.759 12.803 10.759C12.9461 10.759 13.09 10.702 13.1996 10.5903L15.3339 8.40929C15.4398 8.30054 15.4997 8.15354 15.4997 7.99979C15.4997 7.84679 15.4398 7.69979 15.3339 7.59104Z" />
-                <defs>
-                  <linearGradient id="paint0_linear_33_471" x1="8.6924" y1="-1.14233" x2="13.9603" y2="8.69608" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#FFC881" />
-                    <stop offset="1" stop-color="#DA8517" />
-                  </linearGradient>
-                  <linearGradient id="paint1_linear_33_471" x1="-0.586956" y1="-3.34868" x2="11.7002" y2="19.793" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#FFC881" />
-                    <stop offset="1" stop-color="#DA8517" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </span>
-            <span className="text-[#7C7C7C] group-focus:text-gold-gradient max-sm:hidden">Log out</span>
-          </Link>
+          <div className='mb-2 sm:px-2 mt-16'>
+            {/* logOut  */}
+            <Link className={commonLinkLogout}>
+              <span>
+                <svg className='fill-[#A8A8A8] duration-300 group-focus:fill-[url(#paint0_linear_33_471)]' xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path opacity="0.4" d="M0.5 3.83525C0.5 1.997 2.02268 0.5 3.8934 0.5H7.61423C9.48114 0.5 11 1.9925 11 3.82775V12.1648C11 14.0037 9.47732 15.5 7.60584 15.5H3.88653C2.01886 15.5 0.5 14.0075 0.5 12.1722V11.4672V3.83525Z" />
+                  <path d="M15.3339 7.59104L13.1996 5.40929C12.979 5.18429 12.624 5.18429 12.4041 5.41079C12.185 5.63729 12.1857 6.00254 12.4056 6.22754L13.575 7.42229H12.4538H6.16107C5.85063 7.42229 5.59863 7.68104 5.59863 7.99979C5.59863 8.31929 5.85063 8.57729 6.16107 8.57729H13.575L12.4056 9.77204C12.1857 9.99704 12.185 10.3623 12.4041 10.5888C12.5144 10.702 12.6583 10.759 12.803 10.759C12.9461 10.759 13.09 10.702 13.1996 10.5903L15.3339 8.40929C15.4398 8.30054 15.4997 8.15354 15.4997 7.99979C15.4997 7.84679 15.4398 7.69979 15.3339 7.59104Z" />
+                  <defs>
+                    <linearGradient id="paint0_linear_33_471" x1="8.6924" y1="-1.14233" x2="13.9603" y2="8.69608" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#FFC881" />
+                      <stop offset="1" stop-color="#DA8517" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_33_471" x1="-0.586956" y1="-3.34868" x2="11.7002" y2="19.793" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#FFC881" />
+                      <stop offset="1" stop-color="#DA8517" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </span>
+              <span className="text-[#7C7C7C] group-focus:text-gold-gradient max-sm:hidden">Log out</span>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
