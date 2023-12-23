@@ -1,11 +1,9 @@
-import MainSection from "./MainSection";
-import SideBar from "./SideBar";
+import NewNft from "./NewNft";
 const Page = () => {
     return (
         <div>
-            <div className="container p-0 max-w-screen-xxl bg-[#EDF1F2] min-h-screen flex gap-6">
-                <SideBar />
-                <MainSection />
+            <div className="mt-10">
+                <NewNft />
             </div>
         </div>
     )

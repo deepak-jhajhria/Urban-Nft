@@ -10,6 +10,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Trading from "./Components/Trading";
 import HistoryCard from "./Components/HistoryCard";
+import Page from "./Components/Page";
 function App() {
   return (
     <div>
@@ -21,7 +22,7 @@ function App() {
           <Routes>
             <Route path="/" element={<MainSection />} />
             <Route path="/market" element={<div><Collection /> <Trading /></div>} />
-            <Route path="Favorites" element={<NewNft />} />
+            <Route path="Favorites" element={<Page />} />
             <Route path="insight" element={<HistoryCard />} />
             <Route path="wallet" element={<MetroverseCard />} />
           </Routes>
