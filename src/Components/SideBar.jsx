@@ -5,8 +5,8 @@ const SideBar = () => {
   let commonLinkTwo = "flex gap-4 group LinkBtn items-center text-transparent font-medium text-sm focus:font-semibold font-Inter max-sm:justify-center py-2 px-2 sm:py-[14px] sm:px-[15px] rounded-full mt-4  sm:w-full"
   let commonLinkLogout = "flex gap-4 group LinkBtn items-center text-transparent font-medium text-sm focus:font-semibold font-Inter max-sm:justify-center py-2 px-2 sm:py-[14px] sm:px-[15px] rounded-full sm:w-full"
   return (
-    <div className="container p-0 min-w-[50px] max-w-[50px] xs:max-w-[100px] sm:max-w-[200px]  lg:max-w-[305px] bg-[#FFFDFF] min-h-screen">
-      <div className="fixed bg-[url(./assets/images/sideBarbg.png)] w-full max-w-[50px] xs:max-w-[100px] sm:max-w-[200px]  lg:max-w-[305px] bg-no-repeat bg-top py-4 px-2 lg:py-8 lg:px-6 flex flex-col justify-between  min-h-screen">
+    <div className="container p-0 min-w-[50px] max-w-[50px] xs:max-w-[100px] sm:max-w-[200px]  lg:max-w-[305px] bg-[#FFFDFF] h-full">
+      <div className="fixed bg-[url(./assets/images/sideBarbg.png)] w-full max-w-[50px] xs:max-w-[100px] sm:max-w-[200px]  lg:max-w-[305px] bg-no-repeat bg-top py-4 px-2 lg:py-8 lg:px-6 flex flex-col justify-between h-full overflow-y-scroll">
         <div>
           <div className="flex flex-col items-center">
             <img className='max-xs:w-5 max-xs:h-7 max-lg:mt-4' src={logo} alt="logo" />
