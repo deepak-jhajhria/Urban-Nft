@@ -12,7 +12,7 @@ import HistoryCard from "./Components/HistoryCard";
 import Page from "./Components/Page";
 function App() {
   return (
-    <div>
+    <div className="">
       <div className="flex">
         <SideBar />
         <div className="w-full bg-[#EDF1F2] min-h-screen pl-2 sm:pl-4 md:pl-6 pr-3 sm:pr-6 md:pr-[46px]">
